@@ -24,7 +24,7 @@ There are a few pieces of knowledge you will need to effectively complete the as
 
 ## What are we looking for?
 
- 1. Functionality first and foremost. Does the app accurately do what it's supposed to do?
+ 1. Does the app accurately do what it's supposed to do?
  2. Error handling, and code comments/documentation. We deal with some of peoples most sensitive data, their personal health information. The code we write needs to be readable, dependable, and well documented.
  3. Unit tests. How do you know that the code is doing what it's supposed to do? At minimum, I would expect you to test that you can get and set the patient fields correctly.
  4. Does it look good? It doesn't have to be a piece of art, but it would be good if the application followed the [google material design guidelines](https://material.io/guidelines/) to some degree. Medical apps don't work if people think they're ugly, unintuitive, and don't use them.
