@@ -21,10 +21,16 @@ import org.hl7.fhir.dstu3.model.Bundle;
 import org.hl7.fhir.dstu3.model.Patient;
 import ca.uhn.fhir.context.FhirContext;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
+
 ...
+
+// Use the DSTU 3 data model. There is a newer 4 model, but it has limited Android support.
 FhirContext context = FhirContext.forDstu3();
+
+// *** Note the baseDstu3 server URL. The baseR4 URL returned by the test server examples has limited Android support.
 IGenericClient client = context.newRestfulGenericClient("http://fhirtest.uhn.ca/baseDstu3");
 
+// *** Take caution specifying search parameters, too many and the server times out.
 Bundle bundle = client.search().forResource(Patient.class)
         .where(Patient.NAME.isMissing(false))
         .and(Patient.BIRTHDATE.isMissing(false))
