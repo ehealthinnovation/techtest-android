@@ -13,7 +13,9 @@ There are a few pieces of knowledge you will need to effectively complete the as
 ### 2. [The Test Server](server.md)
 
 ### 3. [HAPI Client documentation (Optional)](https://hapifhir.io/doc_rest_client.html)
- 
+
+### 4. [FHIR Patient documentation (Optional)](http://hl7.org/fhir/STU3/patient.html)
+
 ## The Assignment:
 
 #### Your job is to create a basic Android health application that does the following core tasks. You may use the included HAPI library, or any other REST+JSON solution of your choice:
