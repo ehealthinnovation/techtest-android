@@ -24,10 +24,11 @@ import ca.uhn.fhir.rest.client.api.IGenericClient;
 
 ...
 
-// *** Use the DSTU 3 data model. There is a newer R4 model, but it has limited Android support.
+// *** Use the DSTU 3 data model. There is a newer R4 data model, but it has limited Android support.
 FhirContext context = FhirContext.forDstu3();
 
-// *** Note the baseDstu3 server URL. The baseR4 URL returned by the test server examples has limited Android support.
+// *** Use the baseDstu3 server URL.
+// There is a newer baseR4 URL returned by the test server examples, but it has limited Android support.
 IGenericClient client = context.newRestfulGenericClient("http://fhirtest.uhn.ca/baseDstu3");
 
 // *** Take caution specifying search parameters, too many and the server times out.
