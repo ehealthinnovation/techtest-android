@@ -24,7 +24,7 @@ import ca.uhn.fhir.rest.client.api.IGenericClient;
 
 ...
 
-// Use the DSTU 3 data model. There is a newer 4 model, but it has limited Android support.
+// *** Use the DSTU 3 data model. There is a newer R4 model, but it has limited Android support.
 FhirContext context = FhirContext.forDstu3();
 
 // *** Note the baseDstu3 server URL. The baseR4 URL returned by the test server examples has limited Android support.
