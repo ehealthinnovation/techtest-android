@@ -42,6 +42,8 @@ If you choose to make direct REST calls instead of using the HAPI library, you c
 
 #### Your job is to create a basic Android health application that does the following core tasks. You may use the included HAPI library, or any other REST+JSON solution of your choice:
 
+Begin by cloning this repo. We've configured a skeleton project for you in the `/android` folder.
+
 1. Download the 10 most recently updated patients from the test server.
   * Just as a note, patient objects are complicated...ignore all the fields you do not need when you pull the data from the server. Don't create a tonne of POJOs to cover every field when you download the patient object.
 2. Display a list of these patients to the user, by name. 
