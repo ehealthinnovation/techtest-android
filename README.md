@@ -36,7 +36,7 @@ Bundle bundle = client.search().forResource(Patient.class)
 
 If you choose to make direct REST calls instead of using the HAPI library, you can start with:
 
-`GET http://fhirtest.uhn.ca/baseDstu3/Patient?name:missing=false&birthdate:missing=false`
+`GET http://fhirtest.uhn.ca/baseDstu3/Patient?_format=json&name:missing=false&birthdate:missing=false`
 
 ## The Assignment:
 
