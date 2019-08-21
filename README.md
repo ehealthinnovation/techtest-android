@@ -14,7 +14,29 @@ There are a few pieces of knowledge you will need to effectively complete the as
 
 ### 3. [HAPI Client documentation (Optional)](https://hapifhir.io/doc_rest_client.html)
 
+If you choose to use the HAPI client, here's a snippet to get you started:
+
+```java
+import org.hl7.fhir.dstu3.model.Bundle;
+import org.hl7.fhir.dstu3.model.Patient;
+import ca.uhn.fhir.context.FhirContext;
+import ca.uhn.fhir.rest.client.api.IGenericClient;
+...
+FhirContext context = FhirContext.forDstu3();
+IGenericClient client = context.newRestfulGenericClient("http://fhirtest.uhn.ca/baseDstu3");
+
+Bundle bundle = client.search().forResource(Patient.class)
+        .where(Patient.NAME.isMissing(false))
+        .and(Patient.BIRTHDATE.isMissing(false))
+        .returnBundle(Bundle.class)
+        .execute();
+```
+
 ### 4. [FHIR Patient documentation (Optional)](http://hl7.org/fhir/STU3/patient.html)
+
+If you choose to make direct REST calls instead of using the HAPI library, you can start with:
+
+`GET http://fhirtest.uhn.ca/baseDstu3/Patient?name:missing=false&birthdate:missing=false`
 
 ## The Assignment:
 
