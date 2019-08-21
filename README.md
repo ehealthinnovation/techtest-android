@@ -4,6 +4,20 @@ A technical test for Android development.
 
 First off, thanks for taking the time to apply to our organization. We really appreciate the interest, and we know your time is valuable. We hope that this test will give you a little insight into some of the technologies and systems we deal with on an everyday basis, in addition to helping us get a better idea of your strengths and how what you can bring to our team.
 
+## The Assignment:
+
+#### Your job is to create a basic Android health application that does the following core tasks. You may use the included HAPI library, or any other REST+JSON solution of your choice:
+
+When you're ready to start, begin by cloning this repo. We've configured a skeleton project for you in the `/android` folder.
+
+1. Download the 10 most recently updated patients from the test server.
+  * Just as a note, patient objects are complicated...ignore all the fields you do not need when you pull the data from the server. Don't create a tonne of POJOs to cover every field when you download the patient object.
+2. Display a list of these patients to the user, by name. 
+3. Allow the user to view the given/family name, gender, and birthday of a specific patient if they want.
+4. Allow the user to edit the given/family name, gender, and birthday of a specific patient if they want.
+5. Update the modified patient onto the test server.
+6. Upload the project to a public Git code repository so we can clone and look at what you've done.
+
 ## Your Toolbox:
 
 There are a few pieces of knowledge you will need to effectively complete the assignment.
@@ -44,20 +58,6 @@ Bundle bundle = client.search().forResource(Patient.class)
 If you choose to make direct REST calls instead of using the HAPI library, you can start with:
 
 `GET http://fhirtest.uhn.ca/baseDstu3/Patient?_format=json&name:missing=false&birthdate:missing=false`
-
-## The Assignment:
-
-#### Your job is to create a basic Android health application that does the following core tasks. You may use the included HAPI library, or any other REST+JSON solution of your choice:
-
-Begin by cloning this repo. We've configured a skeleton project for you in the `/android` folder.
-
-1. Download the 10 most recently updated patients from the test server.
-  * Just as a note, patient objects are complicated...ignore all the fields you do not need when you pull the data from the server. Don't create a tonne of POJOs to cover every field when you download the patient object.
-2. Display a list of these patients to the user, by name. 
-3. Allow the user to view the given/family name, gender, and birthday of a specific patient if they want.
-4. Allow the user to edit the given/family name, gender, and birthday of a specific patient if they want.
-5. Update the modified patient onto the test server.
-6. Upload the project to a public Git code repository so we can clone and look at what you've done.
 
 ## What are we looking for?
 
