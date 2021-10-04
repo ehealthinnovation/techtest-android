@@ -28,7 +28,7 @@ There are a few pieces of knowledge you will need to effectively complete the as
 
 ### 2. [The Test Server](server.md)
 
-### 3. [HAPI Client documentation (Optional)](https://hapifhir.io/doc_rest_client.html)
+### 3. [HAPI Client documentation (Optional)](https://hapifhir.io/hapi-fhir/docs/client/generic_client.html)
 
 If you choose to use the HAPI client, here's a snippet to get you started:
 
